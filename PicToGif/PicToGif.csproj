@@ -52,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="convertall.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="KING04.PIC">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="PLANET2.PIC">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

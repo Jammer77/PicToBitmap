@@ -6,3 +6,5 @@ D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.csproj.CoreCompileInputs.cache
 D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.exe
 D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.pdb
 D:\Git_Repo\PicToGif\PicToGif\bin\Debug\PLANET2.PIC
+D:\Git_Repo\PicToGif\PicToGif\bin\Debug\convertall.bat
+D:\Git_Repo\PicToGif\PicToGif\bin\Debug\KING04.PIC

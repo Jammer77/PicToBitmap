@@ -73,6 +73,33 @@ namespace PicToGif
 		}
 
 
+		public IEnumerable<byte> GetByteRGBA()
+		{
+			var upperBound0 = _picture256.GetUpperBound(0) + 1;
+			var upperBound1 = _picture256.GetUpperBound(1) + 1;
+
+			int size = upperBound0 * upperBound1;
+
+			var output = new List<byte>();
+			int i = 0;
+			for (int yy = _picture256.GetUpperBound(1); yy >= 0; yy--)
+			{
+				for (int xx = 0; xx <= _picture256.GetUpperBound(0); xx++)
+				{
+					var resultValue = _palette256[_picture256[xx, yy]];
+					var data = new byte[]
+					{
+						resultValue.R,
+						resultValue.G,
+						resultValue.B,
+						resultValue.A,
+					};
+					output.AddRange(data);
+				}
+			}
+			return output;
+		}
+
 		public int[] GetIntRGBA()
 		{
 			var upperBound0 = _picture256.GetUpperBound(0)+1;
