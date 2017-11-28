@@ -82,7 +82,9 @@ namespace PicToGif
 
 			var output = new List<byte>();
 			int i = 0;
-			for (int yy = _picture256.GetUpperBound(1); yy >= 0; yy--)
+
+			for (int yy = 0; yy < upperBound1; yy++)
+			//for (int yy = _picture256.GetUpperBound(1); yy >= 0; yy--)
 			{
 				for (int xx = 0; xx <= _picture256.GetUpperBound(0); xx++)
 				{
@@ -109,9 +111,11 @@ namespace PicToGif
 
 			int[] output = new int[size];
 			int i = 0;
-			for (int yy = _picture256.GetUpperBound(1); yy >= 0; yy--)
+
+			for (int yy = 0; yy < upperBound1 ; yy++)
+			//for (int yy = _picture256.GetUpperBound(1); yy >= 0; yy--)
 			{
-				for (int xx = 0; xx <= _picture256.GetUpperBound(0); xx++)
+				for (int xx = _picture256.GetUpperBound(0); xx >= 0; xx--)
 				{
 					int resultValue = _palette256[_picture256[xx, yy]].GetInegerRGBA();
 					output[i++] = resultValue;

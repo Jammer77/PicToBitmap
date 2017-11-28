@@ -1,7 +1,6 @@
 D:\Git_Repo\PicToGif\PicToGif\bin\Debug\PicToGif.exe.config
 D:\Git_Repo\PicToGif\PicToGif\bin\Debug\PicToGif.exe
 D:\Git_Repo\PicToGif\PicToGif\bin\Debug\PicToGif.pdb
-D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.csprojResolveAssemblyReference.cache
 D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.csproj.CoreCompileInputs.cache
 D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.exe
 D:\Git_Repo\PicToGif\PicToGif\obj\Debug\PicToGif.pdb
