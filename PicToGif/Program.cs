@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace PicToGif
 {
@@ -13,6 +14,8 @@ namespace PicToGif
 		{
 			var picFile = new PicFile("PLANET2.PIC");
 			var data = picFile.GetIntRGBA();
+	
+
 
 		}
 	}

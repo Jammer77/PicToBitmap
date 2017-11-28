@@ -75,14 +75,19 @@ namespace PicToGif
 
 		public int[] GetIntRGBA()
 		{
-			int size = _picture256.GetUpperBound(0) * _picture256.GetUpperBound(1);
+			var upperBound0 = _picture256.GetUpperBound(0)+1;
+			var upperBound1 = _picture256.GetUpperBound(1)+1;
+
+			int size = upperBound0 * upperBound1;
+
 			int[] output = new int[size];
 			int i = 0;
 			for (int yy = _picture256.GetUpperBound(1); yy >= 0; yy--)
 			{
 				for (int xx = 0; xx <= _picture256.GetUpperBound(0); xx++)
 				{
-					output[i++] = _palette256[_picture256[xx, yy]].GetInegerRGBA();
+					int resultValue = _palette256[_picture256[xx, yy]].GetInegerRGBA();
+					output[i++] = resultValue;
 				}
 			}
 			return output;
@@ -341,6 +346,8 @@ namespace PicToGif
 		{
 			FillFromStream(stream);
 		}
+
+
 
 		public PicFile(string filename) // : this()
 		{
