@@ -35,7 +35,8 @@ namespace PicToGif
 			var data = picFile.GetByteRGBA().ToArray();
 			var bitmap = CreateBitmapFromARGB(320, 200, data);
 			var name = args.First().Split('.').First();
-			bitmap.Save($"{name}.bmp");
+           
+            bitmap.Save($"{name}.png", ImageFormat.Png);
 		}
 	}
 }
