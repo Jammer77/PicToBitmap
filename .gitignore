@@ -4,3 +4,7 @@
 
 /.vscode
 /.vs/PicToGif/v15/Server/sqlite3
+/PicToGif/bin/Release
+/.vs/PicToGif/v15
+/PicToGif/obj/Release
+/PicToGif/obj/Debug/PicToGif.csproj.CoreCompileInputs.cache
